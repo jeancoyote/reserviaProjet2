@@ -1,0 +1,23 @@
+#page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav  main" "nav  foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page>header {
+  grid-area: head;
+}
+
+#page>nav {
+  grid-area: nav;
+}
+
+#page>main {
+  grid-area: main;
+}
+
+#page>footer {
+  grid-area: foot;
+}
