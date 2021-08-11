@@ -34,14 +34,47 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+/* version responsive main et body structure css*/
+#page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav  main" "nav  foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+#page>header {
+  grid-area: head;
+}
+
+#page>nav {
+  grid-area: nav;
+}
+
+#page>main {
+  grid-area: main;
+}
+
+#page>footer {
+  grid-area: foot;
+}
+
+/* type the Body of screen media */
+@media screen and (min-width: 320px) and (max-width: 992px) {
   body { 
     margin: 0;
     box-sizing: border-box;
-    font-family: "ralewayregular", "Sans serif";
+    font-family: "raleway", 'Sans serif';
     max-width: 620px;
     width: 500px;
+}
+}
+/* Style the header of page and screen media*/
+@media screen and (min-width: 320px) and (max-width: 600px){
+  header {
+    margin: 7px;
+    box-sizing: border-box;
+    font-family: "raleway", 'sans-serif';
 }
 }
 
@@ -52,16 +85,19 @@
 }
 
 /* type the main of screeem media*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width:768px) {
   main {
     margin: 0;
     box-sizing: border-box;
-    font-family: "ralewayregular", "Sans serif";
+    font-family: "raleway", "Sans serif";
 }
 }
-/* Style the footer */
+
+/* Style the footer and the screen media*/
+@media screen and (min-width: 320px) and (max-width: 992px) {
 .footer {
   padding: 10px;
+}
 }
 
 .header {
@@ -120,15 +156,19 @@ a.menu {
 }
 a.share {
   color:black;
-  padding: 14em;
+  padding: 7em;
   text-decoration: none;
 }
-#soumettre {
-  margin-right: 5em;
-  display: flex;
+#signup {
+  display: contents;
+  margin-left: 0px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 992px) {
   .header a {
     float: none;
     display: flex;
@@ -142,6 +182,7 @@ h2{
 
 h3{
   margin-left: 40px;
+
 }
 
 .topnav {
@@ -173,7 +214,7 @@ h3{
   background-color: gainsboro;
   border-radius: 4px 4px;
   border-right: 0px;
-  padding: 0px;
+  padding: 13px;
 }
 
 .fa, .fab, .fal, .far, .fas {
@@ -216,7 +257,7 @@ label {
   border-left: 0px;   
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 325px) and (max-width: 500px) {
   .topnav .search-container {
     float: none;
 }
@@ -280,7 +321,7 @@ a.fil {
   border-radius: 30px;
   padding: 2px;
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 600px) {
   .navbar a {
     color: black;  
 }
@@ -362,6 +403,7 @@ div.row {
   color: black;
 }
 
+
 .container {
   grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px; 
@@ -381,6 +423,7 @@ ul.un {
   flex-direction: column;
   align-content: center;
   list-style: none;
+  margin-top: -18px;
   }
 ul.deux {
   display: flex;
@@ -399,7 +442,7 @@ ul.deux {
             "a a ."
             "a a ."
             ". b c";
-  margin-top: -113px;
+  margin-top: -116px;
 }
 ul.Trois {
   display: flex;
@@ -419,5 +462,5 @@ ul.Trois {
             "a a ."
             "a a ."
             ". b c";
-  margin-top: -124px;
+  margin-top: -97px;
 }
