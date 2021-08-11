@@ -1,32 +1,6 @@
-html {
-  font-family: 'Raleway', sans-serif;
-}
-
-body {
-  margin: 0px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
-}
-
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
-}
-
-
-
-section {
-  background-color: #f2f2f2;
 }
 
 @media only screen and (min-width: 600px) {
@@ -61,13 +35,13 @@ section {
   .col-12 {width: 100%;}
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body { 
     margin: 0;
     box-sizing: border-box;
     font-family: "ralewayregular", "Sans serif";
     max-width: 620px;
-    width: 500;
+    width: 500px;
 }
 }
 
@@ -78,7 +52,7 @@ section {
 }
 
 /* type the main of screeem media*/
-@media screen and (min-width: 375px) and (max-width: 992) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   main {
     margin: 0;
     box-sizing: border-box;
@@ -154,7 +128,7 @@ a.share {
   display: flex;
 }
 
-@media screen and (min-width: 375px) and (max-width: 992) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .header a {
     float: none;
     display: flex;
@@ -168,7 +142,6 @@ h2{
 
 h3{
   margin-left: 40px;
-
 }
 
 .topnav {
@@ -188,7 +161,7 @@ h3{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px
+  font-size: 17px;
 }
 
 .topnav a:hover {
@@ -200,7 +173,7 @@ h3{
   background-color: gainsboro;
   border-radius: 4px 4px;
   border-right: 0px;
-  padding: Opx;
+  padding: 0px;
 }
 
 .fa, .fab, .fal, .far, .fas {
@@ -219,7 +192,7 @@ h3{
   margin-top: 0px;
   font-size: 17px;  
   padding: 9px;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 input {
@@ -243,7 +216,7 @@ label {
   border-left: 0px;   
 }
 
-@media screen and (min-width: 375px) and (max-width: 992) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .topnav .search-container {
     float: none;
 }
@@ -307,7 +280,7 @@ a.fil {
   border-radius: 30px;
   padding: 2px;
 }
-@media screen and (min-width: 375px) and (max-width: 992) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .navbar a {
     color: black;  
 }
@@ -319,9 +292,7 @@ a.fil {
   margin: 0px auto;
   height: auto;
   box-sizing: border-box;
-  /* background-color: white;*/
-  border-radius: 1.5rem;
-  padding: 2rem;
+  background-color: white;
 }
 
 container:after {
@@ -392,16 +363,6 @@ div.row {
 }
 
 .container {
-  /* standard */
-  column-gap: line-size;
-  row-gap: line-size;
-
-  /* old */
-  grid-column-gap: line-size;
-  grid-row-gap: line-size;
-}
-
-.container {
   grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px; 
   column-gap: 10px;
@@ -438,7 +399,7 @@ ul.deux {
             "a a ."
             "a a ."
             ". b c";
-  margin-top: -159px;
+  margin-top: -113px;
 }
 ul.Trois {
   display: flex;
@@ -458,14 +419,5 @@ ul.Trois {
             "a a ."
             "a a ."
             ". b c";
-  margin-top: -136px;
-}
-
-@import url(css/responsive.css);
-@import url(css/main-structure.css);
-
-body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "raleway", "Sans serif";
+  margin-top: -124px;
 }
