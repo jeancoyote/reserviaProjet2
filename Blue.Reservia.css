@@ -1,7 +1,32 @@
-<<<<<<< HEAD
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+}
+
+
+
+section {
+  background-color: #f2f2f2;
 }
 
 @media only screen and (min-width: 600px) {
@@ -294,7 +319,9 @@ a.fil {
   margin: 0px auto;
   height: auto;
   box-sizing: border-box;
-  background-color: white;
+  /* background-color: white;*/
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 
 container:after {
@@ -433,7 +460,7 @@ ul.Trois {
             ". b c";
   margin-top: -136px;
 }
-=======
+
 @import url(css/responsive.css);
 @import url(css/main-structure.css);
 
@@ -442,5 +469,3 @@ body {
   box-sizing: border-box;
   font-family: "raleway", "Sans serif";
 }
-
->>>>>>> 6eecfe54884ee3f2c2f85e502b461eef11e7ade2
