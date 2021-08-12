@@ -1,40 +1,91 @@
 /* For mobile phones: */
+
 [class*="col-"] {
   width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
+
 /* version responsive main et body structure css*/
+
 #page {
   display: grid;
   width: 100%;
@@ -64,44 +115,81 @@ html {
 }
 
 /* type the Body of screen media */
-@media screen and (min-width: 320px) and (max-width: 992px) {
-  body { 
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    max-width: 620px;
-    width: 500px;
+
+body {
+  margin: 0;
+  font-family: 'raleway', sans-serif;
 }
-}
+
 /* Style the header of page and screen media*/
-@media screen and (min-width: 320px) and (max-width: 600px){
+
+/* @media screen and (min-width: 320px) and (max-width: 600px){
   header {
     margin: 7px;
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
 }
 }
+ */
+
+header {
+  display: grid;
+  grid-template-areas: "logo inscrire" "hebergement activite";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1FR;
+}
+
+@media screen AND (min-width:768px) {
+  header {
+    grid-template-areas: "logo hebergement activite inscrire";
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media screen AND (min-width:1024px) {
+  header {
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+  }
+}
+
+header a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 50%;
+  max-width: 165px;
+}
 
 /* Style the content */
+
 .content {
   padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
+  height: 200px;
+  /* Should be removed. Only for demonstration */
 }
 
 /* type the main of screeem media*/
+
 @media screen and (min-width: 320px) and (max-width:768px) {
   main {
     margin: 0;
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
-}
+  }
 }
 
 /* Style the footer and the screen media*/
+
 @media screen and (min-width: 320px) and (max-width: 992px) {
-.footer {
-  padding: 10px;
-}
+  .footer {
+    padding: 10px;
+  }
 }
 
 .header {
@@ -123,6 +211,7 @@ div.header-right {
   list-style: none;
   padding-right: 5em;
 }
+
 #grid {
   display: grid;
   width: 100%;
@@ -133,7 +222,7 @@ div.header-right {
   text-decoration: overline 2px;
   color: blue;
   margin-top: 0;
-} 
+}
 
 .header-right.active {
   text-decoration: blue solid;
@@ -146,30 +235,33 @@ div.header-right {
   margin-left: 30px;
 }
 
-a.logo {
-  display: flex;
-  float: left;
-  text-align: left;
-  height: 3rem;
-  margin-left: 5em;
-}
-a.menu {
+a {
+  text-decoration: none;
   color: black;
-  padding: 0px;
-  text-decoration: none;
 }
+
+a.logo {
+  grid-area: logo;
+}
+
+@media screen AND (min-width:768px) {
+  a.logo {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+}
+
+a.menu {
+  /* padding: 0px; */
+  grid-area: hebergement;
+}
+
 a.share {
-  color:black;
-  padding: 7em;
-  text-decoration: none;
+  grid-area: activite;
 }
+
 #signup {
   display: contents;
-  margin-left: 0px;
-  text-decoration: none;
-}
-a{
-  text-decoration: none;
 }
 
 @media screen and (min-width: 375px) and (max-width: 992px) {
@@ -177,16 +269,15 @@ a{
     float: none;
     display: flex;
     text-decoration: none;
-}
+  }
 }
 
-h2{
+h2 {
   margin-left: 40px;
 }
 
-h3{
+h3 {
   margin-left: 40px;
-
 }
 
 .topnav {
@@ -201,7 +292,7 @@ h3{
 .topnav a {
   float: left;
   color: black;
-  background-color:gainsboro;
+  background-color: gainsboro;
   display: flex;
   text-align: center;
   padding: 14px 16px;
@@ -211,7 +302,7 @@ h3{
 
 .topnav a:hover {
   border-left: gainsboro;
-  border-right:gainsboro;
+  border-right: gainsboro;
 }
 
 .topnav a.active {
@@ -232,10 +323,10 @@ h3{
 .topnav input[type=text] {
   float: left;
   color: black;
-  text-align: center; 
+  text-align: center;
   padding: 8px;
   margin-top: 0px;
-  font-size: 17px;  
+  font-size: 17px;
   padding: 9px;
   font-weight: 700;
 }
@@ -258,14 +349,14 @@ label {
   border-bottom-right-radius: 9px;
   border-top-right-radius: 12px;
   border: solid #f1f1f1;
-  border-left: 0px;   
+  border-left: 0px;
 }
 
 @media screen and (min-width: 325px) and (max-width: 500px) {
   .topnav .search-container {
     float: none;
+  }
 }
-} 
 
 div.navbar {
   display: flex;
@@ -280,9 +371,10 @@ div.navbar {
   margin-left: 0px;
   text-decoration: none;
 }
+
 button {
-    background-color: #DEEBFF;
-    text-decoration: none;
+  background-color: #DEEBFF;
+  text-decoration: none;
 }
 
 .circ {
@@ -293,6 +385,7 @@ button {
   padding: 12px;
   margin: -1px 10px -2px -2px;
 }
+
 .navbar a.active {
   border: solid white;
   list-style: none;
@@ -301,15 +394,18 @@ button {
   margin-left: -33px;
   text-decoration: none;
 }
+
 a.active {
   margin-left: 30px;
   text-decoration: none;
   padding: 13px;
 }
+
 a.fil {
   text-decoration: none;
-  color:black;
+  color: black;
 }
+
 .navbar a:hover {
   text-decoration: none;
   list-style: none;
@@ -318,17 +414,19 @@ a.fil {
 .navbar a {
   border: solid #f1f1f1;
   border-radius: 19px 19px 19px 19px;
-  padding: 0px;   
+  padding: 0px;
 }
+
 .i.fas {
   border: solid gainsboro;
   border-radius: 30px;
   padding: 2px;
 }
+
 @media screen and (min-width: 375px) and (max-width: 600px) {
   .navbar a {
-    color: black;  
-}
+    color: black;
+  }
 }
 
 .container {
@@ -346,15 +444,29 @@ container:after {
   display: table;
   clear: both;
 }
-
-main {
+@media screen AND (min-width:1024px){
+  main {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  /* flex-direction: column; */
+  /* align-items: stretch; */
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
+#hebergements,#Populaires{
+  
+background-color: #F2F2F2;
+  
+border-radius: 1rem;
+}
+#hebergements{
+  width: 65%;
+}
+#Populaires{
+  width:30%
+}
+}
+
 
 .box_un {
   width: 64%;
@@ -370,6 +482,7 @@ main {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+
 .ligne-une, .ligne-deux {
   width: 100%;
   height: auto;
@@ -409,10 +522,11 @@ div.row {
 
 .container {
   grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
+  grid-template-rows: 80px auto 80px;
   column-gap: 10px;
   row-gap: 15px;
 }
+
 ul {
   list-style: none;
   display: inline-flex;
@@ -434,7 +548,8 @@ ul.un {
   align-content: center;
   list-style: none;
   margin-top: -18px;
-  }
+}
+
 ul.deux {
   display: flex;
   flex-wrap: nowrap;
@@ -448,12 +563,10 @@ ul.deux {
   flex-direction: column;
   align-content: center;
   list-style: none;
-  grid-template-areas: 
-            "a a ."
-            "a a ."
-            ". b c";
+  grid-template-areas: "a a ." "a a ." ". b c";
   margin-top: -101px;
 }
+
 ul.Trois {
   display: flex;
   flex-wrap: wrap;
@@ -468,9 +581,6 @@ ul.Trois {
   flex-wrap: nowrap;
   align-content: center;
   list-style: none;
-  grid-template-areas: 
-            "a a ."
-            "a a ."
-            ". b c";
+  grid-template-areas: "a a ." "a a ." ". b c";
   margin-top: -82px;
 }
