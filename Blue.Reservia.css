@@ -59,12 +59,16 @@
   grid-area: foot;
 }
 
+html {
+  font-family: 'raleway', sans-serif;
+}
+
 /* type the Body of screen media */
 @media screen and (min-width: 320px) and (max-width: 992px) {
   body { 
     margin: 0;
     box-sizing: border-box;
-    font-family: "raleway", 'Sans serif';
+    font-family: 'raleway', sans-serif;
     max-width: 620px;
     width: 500px;
 }
@@ -74,7 +78,7 @@
   header {
     margin: 7px;
     box-sizing: border-box;
-    font-family: "raleway", 'sans-serif';
+    font-family: 'raleway', sans-serif;
 }
 }
 
@@ -89,7 +93,7 @@
   main {
     margin: 0;
     box-sizing: border-box;
-    font-family: "raleway", "Sans serif";
+    font-family: 'raleway', sans-serif;
 }
 }
 
@@ -403,13 +407,19 @@ div.row {
   color: black;
 }
 
-
 .container {
   grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px; 
   column-gap: 10px;
   row-gap: 15px;
 }
+ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+
 ul.un {
   display: flex;
   flex-wrap: nowrap;
@@ -442,7 +452,7 @@ ul.deux {
             "a a ."
             "a a ."
             ". b c";
-  margin-top: -116px;
+  margin-top: -101px;
 }
 ul.Trois {
   display: flex;
@@ -462,5 +472,5 @@ ul.Trois {
             "a a ."
             "a a ."
             ". b c";
-  margin-top: -97px;
+  margin-top: -82px;
 }
