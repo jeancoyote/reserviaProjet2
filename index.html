@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,33 +11,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" media="screen" type="text/css" href="Blue.Reservia.css" />
 </head>
-
 <body>
-
+  
   <!-- L'en tête et la navigation du site -->
-
+  
   <header>
-    <a href="#default" class="logo"><img src="images/logo/Reservia@3x.png" alt="image de présentation du site"></a>
-    <a class="menu" href="#hebergements">Hébergements</a>
-    <a class="share" href="#activites">Activités</a>
-    <a href="#s'inscrire">S'inscrire</a>
+  <div class="header">
+    <div class="logo">
+      <a href="#default" class="logo"><img src="images\logo\Reservia@3x.png"
+      alt="image de présentation du site"></a>
+        <div class="header-right">
+          <a class="menu" href="#hebergements">Hébergements</a>
+          <a class="share" href="#activites">Activités</a>
+          <div id="signup"><a href="#s'inscrire">S'inscrire</a></div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- La Présentation navigation site -->
-
+  
   <h2>Trouver votre logement pour des vacances de rêves</h2>
   <h3>En plein centre ville ou en pleine nature</h3>
-
+  
   <!-- La Partie navigation du site -->
-
-    <div class="topnav">
+    
+  <div class="topnav">
       <a class="active" href="#mapicon"><i class='fas fa-map-marker-alt'></i></a>
       <input type="text" placeholder="marseille france"><label>rechercher</label>
     </div>
-
-
+    
     <!-- Les Choix de navigation du site -->
-
+    
     <div class="navbar">
       <a class="active" href="#active"><i class="filtres"></i> Filtres</a>
       <a class="fil" href="#"><i class="fas circ fa-money-bill-wave fa-sm"></i>Economique</a>
@@ -46,20 +50,15 @@
       <a class="fil" href="#"><i class="fas circ fa-heart fa-sm"></i>Romantique</a>
       <a class="fil" href="#"><i class="fas circ fa-dog fa-sm"></i>Animaux autorisés</a>
     </div>
-
-
+    
     <!-- La présentation des différents types de logements -->
-
+    
     <i class='fas fa-info-circle'></i>
-
     <h4>plus de 500 logements disponibles dans cette ville</h4>
-
+  
   <main>
     <section id="hebergements">
       <h2>Hébergements à Marseille</h2>
-      <!-- La Partie Réservation et location du site -->
-  
-  
       <div class="container">
         <div class="row row-cols-auto">
           <div class="card">
@@ -138,13 +137,14 @@
       </div>
     </section>
 
-
     <section id="Populaires">
       <h2>Les plus Populaires</h2>
         <aside>
       <article class="card">
+        <a href="#">
+        <figure>
         <img src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo Hôtel cinq étoiles">
-
+          <figcaption>
         <h3>Hôtel le Soleil du Matin</h3>
         <p>Nuit à partir de 128€</p>
         <div class="fas fa-star ">
@@ -153,11 +153,16 @@
           <i class="fas fa-star "></i>
           <i class="fas fa-star "></i>
         </div>
+        </figcaption>
+        </figure>
+        </a>
       </article>
-    
+
       <article class="card">
+        <a href="#">
+          <figure>
         <img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo chambres d'Hôtes quatre étoiles">
-        
+            <figcaption>
         <h3>Au coeur de L'eau Chambres d'Hôtes</h3>
         <P>Nuit à partir de 71€</P>
         <div class=" fas fa-star">
@@ -166,11 +171,16 @@
           <i class="fas fa-star "></i>
           <i class="fas fa-star "></i> 
         </div>
+        </figcaption>
+        </figure>
+        </a>
       </article>
-    
+
       <article class="card">
+        <a href="#">
+          <figure>
         <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo Hôtel quatre étoiles">
-        
+            <figcaption>
         <h3>Hôtel Tout bleu et Blanc</h3>
         <P>Nuit à partir de 68€</P>
         <div class=" fas fa-star ">
@@ -179,18 +189,21 @@
           <i class="fas fa-star "></i>
           <i class="fas fa-star "></i>
         </div>
+        </figcaption>
+        </figure>
+        </a>
       </article>
       </aside>
       
-
     </section>
   </main>
 
   <!-- Informations annexes du site -->
-
+  
   <strong>Afficher plus</strong>
-
+  
   <!-- Les activités du Site -->
+  
   <section id="#activites">
     <h2>Activités à Marseille</h2>
 
@@ -219,12 +232,10 @@
       <h3>Parc Longchamp</h3>
     </article>
   </section>
-
-
+  
   <!-- Le pied de page du site -->
-
+  
   <footer>
-
     <ul class="un">
       <li><strong>A propos</strong></li>
       <li>Fonctionnement du site</li>
@@ -241,8 +252,6 @@
       <li>Centre d'aide</li>
       <li>Nous contacter</li>
     </ul>
-
   </footer>
 </body>
-
 </html>
