@@ -32,6 +32,14 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+}
+
 /* version responsive main et body structure css*/
 #page {
   display: grid;
@@ -52,13 +60,12 @@
 #page>footer {
   grid-area: foot;
 }
-
 html {
   font-family: 'raleway', sans-serif;
 }
 
 /* type the Body of screen media */
-@media screen and (min-width: 320px) and (max-width: 992px) {
+@media screen and (min-width: 320px) and (max-width: 1304px) {
   body { 
     margin: 0;
     box-sizing: border-box;
@@ -68,7 +75,7 @@ html {
 }
 }
 /* Style the header of page and screen media*/
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width:1200px){
   header {
     margin: 7px;
     box-sizing: border-box;
@@ -82,11 +89,11 @@ html {
   height: 200px; /* Should be removed. Only for demonstration */
 }
 /* type the main of screeem media*/
-@media screen and (min-width: 320px) and (max-width:768px) {
+@media screen and (min-width: 320px) and (max-width:992px) {
   main {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
+    font-family: 'raleway', sans-serif;   
 }
 }
 
@@ -100,6 +107,7 @@ html {
   overflow: hidden;
   padding: 16px 16px;
 }
+
 div.header {
   grid-template-rows: 40px 4em 40px;
 }
@@ -313,12 +321,15 @@ container:after {
   clear: both;
 }
 main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+}
+.main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 div.row {
@@ -338,6 +349,12 @@ div.row {
   border-radius: 31px 30px 30px 29px;
   overflow: hidden;
   text-decoration: none;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
 }
 .card img {
   display: table-row;
@@ -354,7 +371,11 @@ div.row {
   row-gap: 15px;
 
 }
-
+section {
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
 
 ul {
   list-style: none;
@@ -362,7 +383,6 @@ ul {
   padding: 0;
   margin: 0;
 }
-
 ul.un {
   display: flex;
   flex-wrap: nowrap;
