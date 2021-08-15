@@ -1,43 +1,46 @@
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway',Arial, Helvetica, sans-serif;
+    margin: 0;
 }
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway',Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway',Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway',Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+} 
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) { 
+@media only screen and (min-width: 1200px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway',Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
 }
 
 /* version responsive main et body structure css*/
@@ -65,17 +68,15 @@ html {
 }
 
 /* type the Body of screen media */
-@media screen and (min-width: 320px) and (max-width: 1304px) {
-  body { 
+@media screen and (min-width: 320px) and (max-width: 1440px) {
+  body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
-    max-width: 620px;
-    width: 500px;
 }
 }
 /* Style the header of page and screen media*/
-@media screen and (min-width: 320px) and (max-width:1200px){
+@media screen and (min-width: 320px) and (max-width: 1440px){
   header {
     margin: 7px;
     box-sizing: border-box;
@@ -89,7 +90,7 @@ html {
   height: 200px; /* Should be removed. Only for demonstration */
 }
 /* type the main of screeem media*/
-@media screen and (min-width: 320px) and (max-width:992px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   main {
     margin: 0;
     box-sizing: border-box;
@@ -98,7 +99,7 @@ html {
 }
 
 /* Style the footer and the screen media*/
-@media screen and (min-width: 320px) and (max-width: 992px) {
+@media screen and (min-width: 320px) and (max-width: 1440px) {
 .footer {
   padding: 10px;
 }
@@ -164,7 +165,7 @@ a.share {
 a{
   text-decoration: none;
 }
-@media screen and (min-width: 375px) and (max-width: 992px) {
+@media screen and (min-width: 320px) and (max-width: 1440) {
   .header a {
     float: none;
     display: flex;
@@ -214,12 +215,13 @@ h3{
 .topnav input[type=text] {
   float: left;
   color: black;
-  text-align: center; 
+  text-align: center;
   padding: 8px;
   margin-top: 0px;
-  font-size: 17px;  
-  padding: 9px;
+  font-size: 17px;
+  padding: 8px;
   font-weight: 700;
+  margin-right: -2rem;
 }
 input {
   text-align: left;
@@ -238,9 +240,9 @@ label {
   border-bottom-right-radius: 9px;
   border-top-right-radius: 12px;
   border: solid #f1f1f1;
-  border-left: 0px;   
+  border-left: 0px;
 }
-@media screen and (min-width: 325px) and (max-width: 500px) {
+@media screen and (min-width: 325px) and (max-width: 1440) {
   .topnav .search-container {
     float: none;
 }
@@ -301,7 +303,7 @@ a.fil {
   border-radius: 30px;
   padding: 2px;
 }
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 1440px) {
   .navbar a {
     color: black;  
 }
@@ -320,16 +322,54 @@ container:after {
   display: table;
   clear: both;
 }
+
 main {
   display: grid;
   column-gap: 2rem;
   grid-template-columns: 6fr 3fr;
 }
 .main {
-  max-width: 1440px;
+  max-width: 900px;
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
+}
+
+#hebergement {
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 63%; 
+    height: 636px;  
+    margin: auto;
+}
+
+#mes_hebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    width: 30% ;   
+    border: 3px solid #ffffff; 
+    border-radius: 20px;
+    box-shadow: 0 4px 4px #c0c0c0;
+    line-height: 10px;
+    margin-top: 25px;   
+}
+
+article img {
+    margin-top: -15px;
+    width: 100%;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+article h2 {
+    margin-left: 20px;
+    margin-bottom: 25px;
 }
 
 div.row {
