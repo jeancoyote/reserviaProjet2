@@ -1,231 +1,228 @@
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+@import url("./css/main-structure.css");/* version responsive main et body structure css*/
+@import url("./css/header.css");
+@import url("./css/presentation.css");
+
+:root {
+  --gris: #f2f2f2;
+  --bleu: #0065fc;
+  --bleuclair: #deebff;
 }
 
-/* type the Body of screen media */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-}
-}
-/* Style the header of page and screen media*/
-@media screen and (min-width: 320px) and (max-width:768px){
-  header {
-    margin: 7px;
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-}
-}
-/* Style the content */
-.content {
-  padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
-}
-/* type the main of screeem media*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  main {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;   
-}
-}
-
-/* Style the footer and the screen media*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-.footer {
-  padding: 10px;
-}
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway',Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway',Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway',Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway',Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway',Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-}
-
-/* version responsive main et body structure css*/
-#page {
-  display: grid;
-  width: 100%;
-  grid-template-areas: "head head" "nav  main" "nav  foot";
-  grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: 150px 1fr;
-}
-#page>header {
-  grid-area: head;
-}
-#page>nav {
-  grid-area: nav;
-}
-#page>main {
-  grid-area: main;
-}
-#page>footer {
-  grid-area: foot;
-}
 html {
   font-family: 'raleway', sans-serif;
 }
 
+/* For mobile phones: */
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
 /* type the Body of screen media */
-@media screen and (min-width: 320px) and (max-width: 1440px) {
-  body {
+body{
+  color: black;
+  font-family: 'raleway', sans-serif;
+  margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header of page and screen media*/
+
+
+/* Style the content */
+
+.content {
+  padding: 10px;
+  height: 200px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* type the main of screeem media*/
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  main {
     margin: 0;
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
-}
-}
-/* Style the header of page and screen media*/
-@media screen and (min-width: 320px) and (max-width: 1440px){
-  header {
-    margin: 7px;
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-}
+  }
 }
 
+/* Style the footer and the screen media*/
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  body {
+    box-sizing: border-box;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+}
+
+
+
+
+
 /* Style the content */
+
 .content {
   padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
+  height: 200px;
+  /* Should be removed. Only for demonstration */
 }
+
 /* type the main of screeem media*/
+
 @media screen and (min-width: 320px) and (max-width: 1200px) {
   main {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'raleway', sans-serif;   
-}
+    font-family: 'raleway', sans-serif;
+  }
 }
 
 /* Style the footer and the screen media*/
+
 @media screen and (min-width: 320px) and (max-width: 1440px) {
-.footer {
-  padding: 10px;
+  .footer {
+    padding: 10px;
+  }
 }
-}
+
 /* type the Body of screen media */
 
 body {
   margin: 0;
   font-family: 'raleway', sans-serif;
 }
-/* Style the header of page and screen media*/
 
-/* @media screen and (min-width: 320px) and (max-width: 600px){
-  header {
-    margin: 7px;
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-}
-}
- */
 
-header {
-  display: grid;
-  grid-template-areas: "logo inscrire" "hebergement activite";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1FR;
-}
-
-@media screen AND (min-width:768px) {
-  header {
-    grid-template-areas: "logo hebergement activite inscrire";
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-}
-
-@media screen AND (min-width:1024px) {
-  header {
-    grid-template-columns: 5fr 1fr 1fr 1fr;
-  }
-}
-
-header a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-header img {
-  width: 50%;
-  max-width: 165px;
-}
 
 /* Style the content */
 
@@ -266,13 +263,15 @@ div.logo {
   text-decoration: none;
   margin-top: 8px;
 }
+
 /* responsive phone and tablette of header-right*/
-@media screen and (min-width: 320px) and (max-width: 768px){
-div.header-right {
-  float: right;
-  list-style: none;
-  padding-right: 5em;
-}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  div.header-right {
+    float: right;
+    list-style: none;
+    padding-right: 5em;
+  }
 }
 
 #grid {
@@ -315,19 +314,34 @@ a.logo {
 }
 
 a.menu {
-  /* padding: 0px; */
   grid-area: hebergement;
-  color: black;
 }
-/* style border responsive a.menu */
-@media screen and (min-width: 320px) and (max-width: 500Px ) {
-  a.menu {
-    text-decoration: blue solid;
-  }
-}
+
 a.share {
   grid-area: activite;
+}
+
+a.menu, a.share {
   color: black;
+  border-bottom: 2px solid var(--gris);
+}
+
+a.menu:hover, a.share:hover {
+  color: var(--bleu);
+  border-bottom: 2px solid var(--bleu);
+}
+
+@media screen AND (min-width:768px) {
+  header a {
+    border-bottom: none !important;
+    border-top: 2px solid transparent;
+  }
+  a.menu, a.share {
+    color: black;
+  }
+  a.menu:hover, a.share:hover {
+    border-top: 2px solid var(--bleu);
+  }
 }
 
 #signup {
@@ -336,7 +350,7 @@ a.share {
 
 @media screen and (min-width: 375px) and (max-width: 992px) {
   .header a {
-    float: none;
+    /*     float: none; */
     display: flex;
     text-decoration: none;
   }
@@ -349,97 +363,16 @@ h2 {
 h3 {
   margin-left: 35px;
 }
-.topnav {
-  overflow: hidden;
-  color: black;
-  text-align: center;
-  padding: 15px;
-  border-radius: 20px 20px 20px 20px;
-  margin-left: 0rem;
-}
 
-.topnav a {
-  float: left;
-  color: black;
-  background-color: gainsboro;
-  display: flex;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
-.topnav a:hover {
-  border-left: gainsboro;
-  border-right: gainsboro;
-}
-
-.topnav a.active {
-  background-color: gainsboro;
-  border-radius: 4px 4px;
-  border-right: 0px;
-  padding: 13px;
-}
 
 .fa, .fab, .fal, .far, .fas {
   color: #0065fc;
 }
 
-.topnav .search-container {
-  align-content: flex-start;
-}
 
-.topnav input[type=text] {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 8px;
-  margin-top: 0px;
-  font-size: 17px;
-  padding: 9px;
-  font-weight: 700;
-}
 
-input {
-  text-align: left;
-  color: black;
-  font: small-caps bold 35px/1 sans-serif;
-  border: solid #f1f1f1;
-  border-right: 0px;
-  border-left: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin-right: -42px;
-}
 
-label {
-  float: left;
-  background-color: #0065fc;
-  padding: 10px;
-  border-bottom-right-radius: 9px;
-  border-top-right-radius: 12px;
-  border: solid #f1f1f1;
-  border-left: 0px;
-}
-/*margin and large of tonav*/
-@media screen and (min-width: 320px) and (max-width: 430px) {
-  .topnav {
-    display: inline-flex;
-    margin-left: -1rem;
- }
-  .topnav a.active {
-    padding: 12px;
-  }
-  a.active {
-    margin-left: -9px;
-  }
-  .topnav input[type=text] {
-    text-align: left;
-    }
-  label {
-    margin-left: -2rem;
-  }
-}
 
 div.navbar {
   display: flex;
@@ -455,10 +388,7 @@ div.navbar {
   text-decoration: none;
 }
 
-button {
-  background-color: #DEEBFF;
-  text-decoration: none;
-}
+
 
 .circ {
   border: 2px;
@@ -507,24 +437,27 @@ a.fil {
 }
 
 /* Navbar adaptative responsive sidebar vertival */
+
 @media screen and (min-width: 320px) and (max-width: 430px) {
   .navbar a {
     color: black;
   }
   .navbar a.active {
     font-size: larger;
-}
+  }
   div.navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
 i.fas.info.circle {
   margin-left: 2rem;
 }
-  h4 {
-    margin-left: 2rem;
-  }
+
+h4 {
+  margin-left: 2rem;
+}
 
 .container {
   padding: 0px 1.5rem;
@@ -541,31 +474,32 @@ container:after {
   display: table;
   clear: both;
 }
-@media screen AND (min-width:1024px){
+
+@media screen AND (min-width:1024px) {
   main {
-  width: 100%;
-  display: flex;
-  /* flex-direction: column; */
-  /* align-items: stretch; */
-  flex-wrap: nowrap;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: stretch; */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  #hebergements, #Populaires {
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+  }
+  #hebergements {
+    width: 65%;
+  }
+  #Populaires {
+    width: 30%
+  }
 }
-#hebergements,#Populaires{
 
-background-color: #F2F2F2;
-
-border-radius: 1rem;
-}
-#hebergements{
-  width: 65%;
-}
-#Populaires{
-  width:30%
-}
-}
 .box_un {
   width: 64%;
 }
+
 .box_un, .box_deux {
   height: auto;
   display: flex;
@@ -576,6 +510,7 @@ border-radius: 1rem;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+
 .ligne-une, .ligne-deux {
   width: 100%;
   height: auto;
@@ -584,11 +519,14 @@ border-radius: 1rem;
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
 div.row {
   display: inline;
   grid-row-start: auto;
 }
+
 /*.card responsive adapt of phone smartphone and tablets*/
+
 @media screen and (min-width: 320px) and (max-width: 430px) {
   .card {
     display: inline;
@@ -596,6 +534,7 @@ div.row {
     background-color: #F2F2F2;
   }
 }
+
 .card {
   display: inline-table;
   color: black;
@@ -632,6 +571,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 ul.un {
   display: flex;
   flex-wrap: nowrap;
@@ -647,14 +587,16 @@ ul.un {
   list-style: none;
   margin-top: -18px;
 }
+
 /* style responsive footer of list ul2 and ul3*/
+
 @media screen and (min-width: 320px) and (max-width: 680px) {
   ul.deux {
     margin-top: -19px;
-}
+  }
   ul.trois {
     margin-top: -17px;
-}
+  }
 }
 
 ul.deux {
@@ -691,4 +633,3 @@ ul.Trois {
   grid-template-areas: "a a ." "a a ." ". b c";
   margin-top: -82px;
 }
-
