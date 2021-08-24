@@ -554,11 +554,10 @@ div.navbar {
   main {
     width: 100%;
     display: flex;
-    /* align-items: stretch; */
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
     /* background-color: #f2f2f2; */
   }
   #hebergements, #Populaires {
@@ -572,6 +571,7 @@ div.navbar {
     justify-content: space-around;
     align-items: flex-start;
     background-color: #f2f2f2;
+    margin-top: 7rem;
   }
   #Populaires {
     width: 30%;
@@ -581,6 +581,7 @@ div.navbar {
     flex-wrap: wrap;
     margin-top: auto;
     background-color: #f2f2f2;
+    margin-right: 2rem;
   }
 }
 
