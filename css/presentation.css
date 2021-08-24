@@ -1,0 +1,111 @@
+h1 {
+  font-size: 1.2rem;
+}
+
+.presentation{
+  padding: 1rem;
+}
+
+
+.topnav {
+  overflow: hidden;
+  display: inline-flex;
+  text-align: center;
+  /* padding: 15px; */
+  border-radius: 20px 20px 20px 20px;
+  margin-left: 0rem;
+}
+
+.topnav a {
+  float: left;
+  background-color: gainsboro;
+  display: flex;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  border-left: gainsboro;
+  border-right: gainsboro;
+}
+
+.topnav a.active {
+  background-color: var(--gris);
+  border-radius: 4px 4px;
+  border-right: 0px;
+  padding: 13px;
+}
+
+
+.topnav .search-container {
+  align-content: flex-start;
+}
+
+.topnav input[type=text] {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  margin-top: 0px;
+  font-size: 17px;
+  padding: 9px;
+  font-weight: 700;
+}
+
+input {
+  text-align: left;
+  color: black;
+  font: small-caps bold 35px/1 sans-serif;
+  border: solid #f1f1f1;
+  border-right: 0px;
+  border-left: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: -42px;
+}
+
+button {
+  background-color: var(--bleu);
+  padding: 10px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 12px;
+  border: 1px solid var(--gris);
+  border-left: 0px;
+}
+
+button::after{
+  content: "\f002";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: white;
+}
+
+@media screen AND (min-width:768px) {
+  button::after{
+    content: "rechercher";
+    font-family: 'Raleway';
+  font-weight: initial;
+  } 
+}
+
+/*margin and large of tonav*/
+
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .topnav {
+    margin-left: -1rem;
+  }
+  .topnav a.active {
+    padding: 12px;
+  }
+  /* a.active {
+    margin-left: -9px;
+  } */
+  .topnav input[type=text] {
+    text-align: left;
+  }
+  label {
+    margin-left: -2rem;
+  }
+}
