@@ -479,9 +479,6 @@ a {
   color: #0065fc;
 }
 
-
-
-
 button {
   background-color: var(--bleu);
   padding: 10px;
@@ -570,8 +567,9 @@ div.navbar {
   text-decoration: none;
 }
 i.fas.fa-info-circle {
-  border: solid 1px grey;
-  color:burlywood;
+  color: cornflowerblue;
+  border: 1px solid burlywood;
+  background-color: azure;
 }
 
 /* style of navbar responsive tablets and phone change of screen*/
@@ -593,12 +591,10 @@ div.navbar {
   main {
     width: 100%;
     display: flex;
-    /* align-items: stretch; */
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: baseline;
     /* background-color: #f2f2f2; */
+    justify-content: space-evenly;
   }
   #hebergements, #Populaires {
     border-radius: 1rem;
@@ -608,18 +604,21 @@ div.navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    align-items: stretch;
     background-color: #f2f2f2;
+    margin-left: 6rem;
+    justify-content: space-between;
+    margin-left: 1rem;
   }
   #Populaires {
     width: 30%;
     display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: auto;
     background-color: #f2f2f2;
+    align-items: stretch;
+    margin-right: 1rem;
   }
 }
 
@@ -632,6 +631,10 @@ h2 {
   font-weight: bold;
   margin: 15px 0 0 20px;
   font-family: 'Raleway', sans-serif;
+}
+
+i.fas.fa-chart-line {
+  color: black
 }
 
 article img {
