@@ -1,37 +1,100 @@
+@import url("./css/main-structure.css");/* version responsive main et body structure css*/
+@import url("./css/header.css");
+@import url("./css/presentation.css");
+
+:root {
+  --gris: #f2f2f2;
+  --bleu: #0065fc;
+  --bleuclair: #deebff;
+}
+
+html {
+  font-family: 'raleway', sans-serif;
+}
+
 /* For mobile phones: */
+
 [class*="col-"] {
   width: 100%;
   align-content: stretch;
 }
 @media only screen and (min-width: 600px) and (max-width: 1056px) {
   /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1056px) {
   /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
 
 :root {
@@ -416,32 +479,8 @@ a {
   color: #0065fc;
 }
 
-.topnav .search-container {
-  align-content: flex-start;
-}
 
-.topnav input[type=text] {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 8px;
-  margin-top: 0px;
-  font-size: 17px;
-  padding: 9px;
-  font-weight: 700;
-}
 
-input {
-  text-align: left;
-  color: black;
-  font: small-caps bold 35px/1 sans-serif;
-  border: solid #f1f1f1;
-  border-right: 0px;
-  border-left: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin-right: -42px;
-}
 
 button {
   background-color: var(--bleu);
