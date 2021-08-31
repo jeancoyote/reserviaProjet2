@@ -545,7 +545,6 @@ label {
   border-top-right-radius: 12px;
   border: solid #f1f1f1;
   border-left: 0px;
-  color: white;
 }
     i.fa.fa-fw.fa-search {
   color: transparent;
@@ -888,7 +887,7 @@ div.activités {
 
 .flex-container {
   background-color: #f1f1f1;
-  width: 200px;
+  width: 245px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
@@ -913,7 +912,7 @@ div.desc1 {
 
 .flex-container1 {
   background-color: #f1f1f1;
-  width: 220px;
+  width: 242px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
@@ -929,7 +928,7 @@ div.desc1 {
 
 .flex-container2 {
   background-color: #f1f1f1;
-  width: 220px;
+  width: 261px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
@@ -954,7 +953,7 @@ div.desc3 {
 
 .flex-container3 {
   background-color: #f1f1f1;
-  width: 200px;
+  width: 233px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
