@@ -96,14 +96,6 @@ html {
     width: 100%;
   }
 }
-:root {
-  --gris: #f2f2f2;
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-}
-html {
-  font-family: 'raleway', sans-serif;
-}
 
 head {
   display: none;
@@ -120,32 +112,7 @@ body {
   display: block;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    box-sizing: border-box;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  body {
-    box-sizing: border-box;
-  }
-}
-
-:root {
-  --gris: #f2f2f2;
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-}
-
 /* Style the header of page and screen media*/
-
-header {
-  display: grid;
-  grid-template-areas: "logo inscrire" "hebergement activite";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1FR;
-}
 
 @media screen and (min-width: 768px) and (max-width: 2560px) {
   header {
@@ -160,22 +127,6 @@ header {
     grid-template-columns: 5fr 1fr 1fr 1fr;
   }
 }
-header {
-  display: block;
-}
-
-body {
-  margin: 0;
-  font-family: 'raleway', sans-serif;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1056px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    margin: 0;
-  }
-}
 
 @media only screen and (min-width: 600px) and (max-width: 1056px) {
   body {
@@ -183,23 +134,6 @@ body {
     font-family: 'raleway', sans-serif;
     margin: 0;
   }
-}
-
-body {
-  color: black;
-  font-family: 'raleway', sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --gris: #f2f2f2;
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-}
-
-html {
-  font-family: 'raleway', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -213,35 +147,9 @@ a.logo {
   grid-area: logo;
 }
 
-@media screen and (min-width: 768px) {
-  header a {
-    border-bottom: none !important;
-    border-top: 2px solid transparent;
-  }
-}
-
-header a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
   color: blue;
-}
-body {
-  margin: 0;
-  font-family: 'raleway', sans-serif;
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    margin: 0;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -252,38 +160,9 @@ body {
   }
 }
 
-body {
-  color: black;
-  font-family: 'raleway', sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --gris: #f2f2f2;
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-}
-
 header img {
   width: 50%;
   max-width: 165px;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-@media screen and (min-width: 768px) {
-  a.menu, a.share {
-    color: black;
-  }
-}
-
-a.menu, a.share {
-  color: black;
-  border-bottom: 2px solid var(--gris);
 }
 
 a.menu:hover, a.share:hover {
@@ -300,64 +179,9 @@ a.menu {
     border-bottom: none !important;
     border-top: 2px solid transparent;
   }
-  a.menu, a.share {
-    color: black;
-  }
+  
   a.menu:hover, a.share:hover {
     border-top: 2px solid var(--bleu);
-  }
-}
-
-header a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-body {
-  margin: 0;
-  font-family: 'raleway', sans-serif;
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    margin: 0;
-  }
-}
-
-body {
-  color: black;
-  font-family: 'raleway', sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --gris: #f2f2f2;
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-}
-
-@media screen and (min-width: 768px) {
-  a.menu, a.share {
-    color: black;
   }
 }
 
@@ -383,65 +207,6 @@ header a {
   height: 100%;
   justify-content: center;
   align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-body {
-  margin: 0;
-  font-family: 'raleway', sans-serif;
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  body {
-    box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
-    margin: 0;
-  }
-}
-
-body {
-  color: black;
-  font-family: 'raleway', sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --gris: #f2f2f2;
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-}
-
-@media screen and (min-width: 768px) {
-  header a {
-    border-bottom: none !important;
-    border-top: 2px solid transparent;
-  }
-}
-
-header a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
 }
 
 header {
@@ -494,10 +259,6 @@ a.active {
   font-size: 17px;
 }
 
-a {
-  text-decoration: none;
-  color: blue;
-}
 .fa, .fab, .fal, .far, .fas {
   color: #0065fc;
 }
@@ -534,6 +295,7 @@ label {
   border-top-right-radius: 12px;
   border: solid #f1f1f1;
   border-left: 0px;
+  color: white;
 }
 /* style topnav responsive search bar input text for desktops and large and extra large ecran*/
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -749,7 +511,7 @@ article {
   grid-template-rows: 7rem 3rem 3rem 2rem;
 }
 
-div.actvités {
+div.activités {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -863,7 +625,7 @@ ul {
 /* Responsive activity of marseilles and adaptative large ecran and extra large ecran*/
 @media screen and ( min-width: 1100px) and (max-width: 2560px) {
 
-div.actvités {
+div.activités {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
