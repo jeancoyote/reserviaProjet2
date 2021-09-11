@@ -152,12 +152,27 @@ a {
   color: blue;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 1440px) {
   body {
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
     margin: 0;
   }
+  h3 {
+    margin-inline: 4px;
+}
+  aside.etoiles.quatreEtoiles {
+  margin-inline: 4px;
+}
+  aside.etoiles.troisEtoiles {
+  margin-inline: 4px;
+}
+  aside.etoiles.cinqEtoiles {
+  margin-inline: 4px;
+}
+p {
+  margin-inline: 4px;
+}
 }
 
 header img {
@@ -231,7 +246,7 @@ h1 {
   text-align: center;
   /* padding: 15px; */
   border-radius: 20px 20px 20px 20px;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 .topnav a:hover {
   border-left: gainsboro;
@@ -261,6 +276,10 @@ a.active {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+i.fas.fa-map-marker-alt {
+  color: black;
 }
 
 .fa, .fab, .fal, .far, .fas {
@@ -301,8 +320,8 @@ label {
   border: solid #f1f1f1;
   border-left: 0px;
   color: white;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
 /* style topnav responsive search bar input text for desktops and large and extra large ecran*/
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -423,12 +442,14 @@ div.navbar {
   align-items: center;
   margin-left: 0px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 i.fas.fa-info-circle {
-  color: cornflowerblue;
-  border: 1px solid burlywood;
-  background-color: azure;
+  border: 1px solid #d9d9d9;
+  background-color: blue;
+  border-radius: 100%;
+  color: white;
 }
 
 /* style of navbar responsive tablets and phone change of screen*/
@@ -444,6 +465,7 @@ i.fas.fa-info-circle {
     margin-left: 0px;
     text-decoration: none;
     justify-content: space-between;
+    cursor: pointer;
   }
 }
 
@@ -470,6 +492,7 @@ i.fas.fa-info-circle {
     justify-content: space-between;
     /* margin-left: 1rem; */
     padding: 1rem;
+    margin-right: 2rem;
   }
   #hebergements article.card {
     width: 30%;
@@ -522,13 +545,13 @@ article {
   grid-template-rows: 7rem 3rem 3rem 2rem;
 }
 
-div.activitÃƒÂ©s {
+div.activités {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-div.activitÃƒÂ©s {
+div.activités {
   align-items: center;
   width: 100%;
   margin-top: 1rem;
@@ -636,13 +659,13 @@ ul {
 /* Responsive activity of marseilles and adaptative large ecran and extra large ecran*/
 @media screen and ( min-width: 1100px) and (max-width: 2560px) {
 
-div.activitÃƒÂ©s {
+div.activités {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-div.activitÃƒÂ©s {
+div.activités {
   align-items: center;
   width: 100%;
   margin-top: 1rem;
@@ -654,7 +677,7 @@ div.activitÃƒÂ©s {
 }
 /*Responsive Activity of Marseilles adaptative phone and tablets screen ecran*/
 @media screen and (min-width: 320px) and (max-width: 1056px) {
-  div.activitÃƒÂ©s {
+  div.activités {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -732,4 +755,53 @@ main,#activites {
   max-width: 1390px;
   margin: auto;
   width: calc( 100% - 2rem);
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  header {
+    margin-inline: 37rem;
+  }
+  .presentation {
+    margin-inline: 37rem;
+  }
+  h3 {
+    margin-inline: 1rem;
+  }
+  aside.etoiles.quatreEtoiles {
+    margin-inline: 1rem;
+}
+aside.etoiles.cinqEtoiles {
+  margin-inline: 1rem;
+}
+aside.etoiles.troisEtoiles {
+  margin-inline: 1rem;
+}
+p {
+  margin-inline: 1rem;
+}
+#activites h2 {
+  grid-area: titre;
+  margin-inline: 0.9rem;
+}
+section#activites {
+  margin-inline: 35.8rem;
+}
+ul.un {
+  margin-left: 21rem;
+}
+li {
+  margin-top: 1rem;
+  margin-inline: 15rem;
+}
+ul.deux {
+  margin-left: -17rem;
+  margin-right: -16rem;
+}
+ul.Trois {
+  margin-right: 20rem;
+}
+}
+@media screen and (min-width:320px) and (max-width:1440px) {
+  li {
+    margin-top: 1rem;
+  }
 }
