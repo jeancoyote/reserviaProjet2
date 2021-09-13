@@ -419,8 +419,18 @@ a.fil {
   color: black;
   margin-right: 2px;
   padding-right: 8px;
+  cursor: pointer;
 }
 
+a.fil {
+  transition: transform .2s;
+} 
+
+a.fil:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
 .circ {
   border: 2px;
   background-color: #DEEBFF;
