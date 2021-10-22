@@ -534,7 +534,7 @@ i.fas.fa-info {
     background-color: #f2f2f2;
     /* align-items: stretch; */
     /* margin-right: 1rem; */
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -571,7 +571,7 @@ article {
   background-color: white;
   display: grid;
   grid-template-rows: 7rem 3rem 3rem 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 div.activitÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s {
@@ -866,6 +866,7 @@ ul.Trois {
   font-family: 'Raleway', sans-serif;
   width: 100%;
   margin-left: -11px;
+  margin-top: 1rem;
 }
   main {
   max-width: 164rem;
