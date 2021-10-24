@@ -829,10 +829,6 @@ section#activites {
   display: grid;
   justify-items: stretch;
 }
-footer {
-  /* margin-inline: 2rem; */
-  /* margin-right: -1rem; */
-}
 ul.un {
   margin-left: -14rem;
 }
@@ -843,9 +839,6 @@ li {
 ul.deux {
   margin-left: 0rem;
   margin-right: 0rem;
-}
-ul.Trois {
-  /* margin-right: -13rem; */
 }
 }
 @media screen and (min-width:320px) and (max-width:1440px) {
@@ -858,6 +851,9 @@ ul.Trois {
   h6 {
     /* margin-bottom: -24px; */
     /* margin-left: -91rem; */
+    text-align: left;
+    margin-bottom: auto;
+    width: 100%;
 }
   h2 {
   font-size: 1rem;
@@ -894,10 +890,10 @@ main, #activites {
   padding: 2rem;
   margin-right: 2rem;
   align-items: flex-end;
-}
-section#activites {
-  /* max-width: 168rem; */
-  /* margin-inline: 1.5rem; */
-  /* display: grid; */
 } 
+}
+h6 {
+  text-align: left;
+  margin-bottom: auto;
+  width: 100%;   
 }
