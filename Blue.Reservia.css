@@ -192,6 +192,7 @@ a.menu {
 }
 
 @media screen and (min-width: 768px) {
+
   header a {
     border-bottom: none !important;
     border-top: 2px solid transparent;
@@ -409,12 +410,12 @@ h3 {
 }
 
 .navbar a.active {
-  border: solid white;
   list-style: none;
   color: black;
   font-size: x-large;
-  margin-left: -33px;
+  margin-left: -.1rem;
   text-decoration: none;
+  width: 100%;
 }
 
 .navbar a {
@@ -457,7 +458,7 @@ a.fil:hover {
 div.navbar {
   display: flex;
   position: relative;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   justify-content: flex-start;
   padding: 3rem 2rem;
@@ -490,13 +491,24 @@ i.fas.fa-info {
     position: relative;
     flex-wrap: wrap;
     -webkit-box-align: center;
-    padding: 3rem 2rem;
+    padding: 3rem 0;
     flex-direction: row;
     margin-left: 0px;
     text-decoration: none;
     justify-content: space-between;
     cursor: pointer;
   }
+}
+
+/* style of navbar responsive iphone 6/7/8 change of screen*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  a.fil {
+    text-decoration: none;
+    color: black;
+    margin-right: 34px;
+    padding-right: 8px;
+    cursor: pointer;
+}
 }
 
 @media screen AND (min-width:1024px) {
@@ -575,13 +587,13 @@ article {
   margin-bottom: 2rem;
 }
 
-div.activités {
+div.activitÃ©s {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-div.activités {
+div.activitÃ©s {
   align-items: center;
   width: 100%;
   margin-top: 1rem;
@@ -658,6 +670,10 @@ ul {
 }
 
 @media screen AND (min-width:768px) {
+    .navbar a.active {
+    width: auto;
+    margin-right: 1rem;
+}
   #Populaires article.card {
     grid-template-areas:
       "photo titre"
@@ -692,13 +708,13 @@ ul {
 /* Responsive activity of marseilles and adaptative large ecran and extra large ecran*/
 @media screen and ( min-width: 1100px) and (max-width: 2560px) {
 
-div.activités {
+div.activitÃ©s {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-div.activités {
+div.activitÃ©s {
   align-items: center;
   width: 100%;
   margin-top: 1rem;
@@ -710,7 +726,7 @@ div.activités {
 }
 /*Responsive Activity of Marseilles adaptative phone and tablets screen ecran*/
 @media screen and (min-width: 320px) and (max-width: 1056px) {
-  div.activités {
+  div.activitÃ©s {
     display: flex;
     flex-direction: column;
     align-items: stretch;
