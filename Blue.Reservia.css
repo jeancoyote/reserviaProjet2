@@ -458,16 +458,16 @@ a.fil:hover {
 div.navbar {
   display: flex;
   position: relative;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
   justify-content: flex-start;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   flex-direction: row;
-  align-content: center;
   align-items: center;
-  margin-left: 0px;
+  margin-left: -10px;
   text-decoration: none;
   cursor: pointer;
+  align-content: center;
 }
 
 i.fas.fa-info {
